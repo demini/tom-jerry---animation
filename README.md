@@ -11,4 +11,4 @@ will appear. This has the ability to upload pictures and videos, write paragraph
 add friends from social media and sync. So when we start to write a name a 
 suggestion list of names with their image will display. Therefore the user can 
 easily update the diary about she was with them. The dates which the user have 
-updated with some memories will be highlighted in the calendar display.
+updated with some memories will be highlighted in the calendar display...
