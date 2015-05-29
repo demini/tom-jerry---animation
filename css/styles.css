@@ -1,2 +1,65 @@
 /* CSS Document */
 
+#wrapper { width:900px; 
+			margin:10px auto; 
+			background-color:#FFF; 
+			padding:0px 40px;}
+
+#content {  float:left;
+			width:580px; 
+			}
+
+#content p { font-size:12px; 
+			line-height:180%;}
+
+#rightside { float:right; 
+			width:270px;}
+			
+#rightside { font-size:12px; 
+			line-height:180%;}
+
+body { background-image:url(../images/light-brown-vintage-soft-leather-texture-hd-575x400.jpg);
+		font-family:Arial, Helvetica, sans-serif;}
+
+#top {}
+
+#logo { float:left; margin:50px 0px;}
+
+#social-media { float:right; margin:50px 0px; 
+				text-align:right;}
+
+#social-media ul li { list-style-type:none; 
+						display:inline;}
+
+#topnav { clear:both; 
+			border-top:1px #663300 dotted;}
+
+#topnav ul li{ list-style-type:none; 
+				display:inline; 
+				margin-right:30px;}
+
+#topnav a:link{ text-decoration:none; text-transform:uppercase; color:#000; font-weight:bold; }
+#topnav a:visited{ text-decoration:none; text-transform:uppercase; color:#000; font-weight:bold;}
+#topnav a:active{ text-decoration:none; text-transform:uppercase; color:#000; font-weight:bold;}
+#topnav a:hover{ text-decoration:none; text-transform:uppercase; color:#BB5E00; font-weight:bold;}
+#topnav a:focus{ text-decoration:none; text-transform:uppercase; color:#BB5E00; font-weight:bold;}
+
+#footer { clear:both; 
+		border-top:1px #663300 dotted; 
+		padding:20px 0px;
+		}
+
+#footer p {text-align:center; font-size:12px; font-weight:bold; }
+#box1 { width:265px; 
+		margin-right:40px; 
+		float:left;}
+
+#box2 { width:265px;
+		float:right;}
+
+.img-right { float:right;}
+
+h1,h2 { font-family:'Open Sans Condensed', Arial, Helvetica, sans-serif;}
+
+h2 { color:#BB5E00}
+
