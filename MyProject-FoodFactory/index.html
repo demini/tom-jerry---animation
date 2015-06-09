@@ -4,6 +4,27 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oleo+Script:700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+	var banners=new Array();
+	banners[0]="images/banners/banner1.png";
+	banners[1]="images/banners/banner2.png";
+	banners[2]="images/banners/banner3.png";
+	banners[3]="images/banners/banner4.png";
+	banners[4]="images/banners/banner5.png";
+	banners[5]="images/banners/banner6.png";
+	var bannerIndex=-1;
+	
+		function banner(){
+			var bannerElement=document.getElementById("banner1");
+			bannerIndex++;
+			bannerElement.src=banners[bannerIndex];
+			setTimeout("banner()",1100);
+			if(bannerIndex==banners.length-1){
+				bannerIndex=-1;
+				}
+			}
+			onload=banner;
+    </script>
     
     
 </head>
@@ -46,7 +67,7 @@
     </div>
     
     <div id="banner">
-    	<img src="images/banners/new1.png">
+    	<img src="images/banners/banner1.png" id="banner1">
     </div>
     
     <div id="menu">

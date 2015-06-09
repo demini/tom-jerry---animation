@@ -58,6 +58,7 @@ body { font-family: 'Open Sans', Arial, Helvetica, sans-serif}
 		  
 #banner { width:960px;
           height:400px;
+		  border:3px #999999 solid;
 		  }
 		 
 #menu { margin-left:400px;
