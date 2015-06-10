@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tom & Jerry</title>
+	<link href="style.css" rel="stylesheet" type="text/css" media="screen">
+   
+    <script type="text/javascript" >
+    
+            var jerry=Array();
+
+     	   jerry[0]="images/sleeping1.png";
+		   jerry[1]="images/sleeping2.png";
+		   jerry[2]="images/jerrygot.png";
+		   jerry[3]="images/jerryruning.png";
+
+		
+			var jerryIndex=0;
+			var j=0;
+			var jerryMargin=0;
+			
+			   function jerryShow(){
+				  var jerryElement=document.getElementById("jerry1");
+				   if(j<6){
+					   jerryIndex++;
+ 				       jerryElement.src=jerry[jerryIndex];
+					   
+				       setTimeout("jerryShow()",700);
+					   if(jerryIndex==jerry.length-3){
+					      jerryIndex=-1;
+					}
+					j++;
+					
+			    }else{
+					if(j>=6 && j<9){
+						jerryIndex=2;
+						jerryElement.src=jerry[jerryIndex];
+						setTimeout("jerryShow()",500);
+						j++;
+						}
+						if(j>=9 && j<=12){
+							jerryIndex=3;
+							jerryElement.src=jerry[jerryIndex];
+							jerryMargin-=40;
+							if(jerryMargin<20){
+								jerryElement.style.marginLeft=jerryMargin + "px";
+								setTimeout("jerryShow()",800);
+								j++;
+								}
+							}
+					}
+			 }
+			
+
+			
+			
+			var images=Array();
+			images[0]="images/2.png";
+			images[1]="images/2tom.png";
+			images[2]="images/thinking.png";
+			images[3]="images/moovingtom.png";
+			images[4]="images/tomAfraid.jpg";
+			images[5]="images/tomruning.png";
+			
+			imgIndex=0;
+			var margin=0;
+			var i=0;
+				function tomShow(){
+					var picElement=document.getElementById("tom1");
+					if(i<6){
+					imgIndex++;
+					picElement.src=images[imgIndex];
+			
+					setTimeout("tomShow()",400);
+						if(imgIndex==images.length-5){
+							imgIndex=-1;
+							}
+							i++;
+					}else{if(i>=6 && i<8){
+						imgIndex=2;
+						picElement.src=images[imgIndex];
+						setTimeout("tomShow()",800);
+						i++;
+						}
+						if(i>=8 && i<13){
+							imgIndex=3;
+							picElement.src=images[imgIndex];
+							margin+=50;
+							if(margin<=250){
+								picElement.style.marginLeft= margin +"px";
+								setTimeout("tomShow()",700);
+								i++;
+								}
+							}if(i>=13 && i<16){
+								imgIndex=4;
+								picElement.src=images[imgIndex];
+								setTimeout("tomShow()",800);
+								i++;
+								}if(i>=16 && i<23){
+									imgIndex=5;
+									picElement.src=images[imgIndex];
+									if(margin>=0){
+										picElement.style.marginLeft=margin +"px";
+										setTimeout("tomShow()",800);
+										margin-=50;
+										i++;
+									}
+									}
+						}
+					
+						}
+						var d=0;
+						var dreams=Array();
+						dreams[0]="images/nonedream.png";
+			function dreamShow(){
+				var dreamElement=document.getElementById("dream1");
+				if(d<6){
+					setTimeout("dreamShow()",700);
+					d++;
+					}else{
+						dreamElement.src=dreams[0];
+						}
+				}
+				
+				</script>
+
+
+	
+        
+</head>
+
+<body onload="tomShow(); jerryShow(); dreamShow();">
+<div id="wrapper">
+ <div id="dream">
+  <img src="images/dream.png" id="dream1">
+ </div>
+<div id="wrappertom&jerry">
+ 
+   <div id="tompic"><img src="images/1.1.png" id="tom1" />
+   </div>
+   
+   <div id="cheese">
+   <img src="images/cheesenew.png">
+   </div>
+    
+    <div id="jerrypic">
+    	<img src="images/sleeping1.png" id="jerry1" />
+         
+
+   </div>
+    
+ </div> 
+  
+ </div>
+    
+
+</body>
+</html>

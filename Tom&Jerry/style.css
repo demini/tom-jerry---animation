@@ -1,0 +1,50 @@
+/* CSS Document */
+
+#wrapper { width: 1353px;
+           height:620px;
+		  
+		   }
+
+#dream { width:1353px;
+         height:300px;
+		 
+		 }
+
+#dream img { margin-left:439px;}
+
+#wrappertom&jerry { width:1353px;
+           height:320px;
+		   margin-top:300px;
+		   }
+		   
+#tompic { width: 570px;
+       height: 320px;
+	   float:left;
+	   }
+	   
+#cheese { width:100px;
+          height:320px;
+		  float:left;
+		  margin-left:0px;}
+		  
+#cheese img { margin-top:220px;
+             }
+
+#jerrypic { width:683px;
+         height:320px;
+		 float:right;
+		 margin-right:0px;
+		 }
+		 
+#jerrypic img { margin-left:250px;}
+
+
+	   
+/*@-webkit-keyframes backdrop_roll{
+	from { right:0px;}
+	to { right: 300px;}
+	}*/
+
+
+
+
